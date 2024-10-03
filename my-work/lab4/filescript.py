@@ -8,7 +8,7 @@ urllib.request.urlretrieve(url, save_path)
 import boto3 
 bucket_name = 'ds2022-azt6gn'
 s3_client = boto3.client('s3')
-s3_client.upload_file(save_path, bucket_name, save_path)
+s3_client.upload_file(save_path, bucket_name, save_path, ExtraArgs={'ContentType': 'image/jpeg'})
 
 import logging
 
