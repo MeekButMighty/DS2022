@@ -1,0 +1,5 @@
+#!/bin/bash
+
+import git
+import python3
+import boto3
